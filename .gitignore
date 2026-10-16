@@ -1,0 +1,9 @@
+node_modules/
+client/dist/
+server/data/*.db
+server/data/*.db-*
+.DS_Store
+*.log
+
+# Local preview config for the Claude desktop app
+.claude/launch.json

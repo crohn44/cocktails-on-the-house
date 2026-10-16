@@ -1,0 +1,23 @@
+{
+  "name": "cocktails-on-the-house",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The best cocktails, ranked by users. React (Vite) front end + Node/SQLite API.",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "npm run build -w client",
+    "start": "NODE_ENV=production npm run start -w server",
+    "test": "npm test -w server",
+    "reseed": "npm run reseed -w server",
+    "seed:demo": "npm run seed:demo -w server",
+    "reset": "npm run reset -w server"
+  }
+}
